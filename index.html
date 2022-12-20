@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="index.css"></head>
+    <body>
+        <h2>Pick your Schedule</h2>
+      
+        <table style = "width:100%">
+            <caption>Class and time</caption>
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Day1</th>
+            <th>start time/ end time</th>
+            <th>Day2</th>
+            <th>start time/end time</th>
+            
+        </tr>
+        
+        <tr>
+            <td>Mina</td>
+            <td>
+                <form action="">
+                    <input type ="text" name="class" id="class1"/>
+            </td>
+            <td>
+                <form action="">
+                    <select name="dropdown" id="day1a">
+                        <option value = "Mon" > Monday </option>
+                        <option value = "Tue" > Tuesday </option>
+                        <option value = "Wed" > Wednesday </option>
+                        <option value = "Thu" > Thursday </option>
+                        <option value = "Fri" > Friday </option>
+                    </select>
+            </td>
+            <td>
+                <!-- <select name="dropdown" id="time1a">
+                    <option value = "12" > 12-1pm </option>
+                    <option value = "1" > 1-2pm </option>
+                    <option value = "2" > 2-3pm </option>
+                    <option value = "3" > 3-4pm </option>
+                    <option value = "4" > 4-5pm </option>
+                    <option value = "5" > 5-6pm </option>
+                    <option value = "6" > 6-7pm </option>
+                    <option value = "7" > 7-8pm </option>
+                </select> -->
+                <input type="text" id="time1a">
+            </td>
+            <td>
+                <select name="dropdown" id="day1b">
+                    <option value = "Mon" > Monday </option>
+                    <option value = "Tue" > Tuesday </option>
+                    <option value = "Wed" > Wednesday </option>
+                    <option value = "Thu" > Thursday </option>
+                    <option value = "Fri" > Friday </option>
+    
+    
+                </select>
+            </td>
+            <td>
+                <!-- <select name="dropdown" id="time1b">
+                    <option value = "12" > 12-1pm </option>
+                    <option value = "1" > 1-2pm </option>
+                    <option value = "2" > 2-3pm </option>
+                    <option value = "3" > 3-4pm </option>
+                    <option value = "4" > 4-5pm </option>
+                    <option value = "5" > 5-6pm </option>
+                    <option value = "6" > 6-7pm </option>
+                    <option value = "7" > 7-8pm </option>
+                </select> -->
+                <input type="text" id="time1b">
+            </td>
+        </tr>
+        <tr>
+            <td>Mina</td>
+            <td>
+                <input type ="text" name="first_name" id="class2"/>
+            </td>
+            <td>
+                <form action="">
+                    <select name="dropdown" id="day2a">
+                        <option value = "Mon" > Monday </option>
+                        <option value = "Tue" > Tuesday </option>
+                        <option value = "Wed" > Wednesday </option>
+                        <option value = "Thu" > Thursday </option>
+                        <option value = "Fri" > Friday </option>
+                    </select>
+            </td>
+            <td>
+                <!-- <select name="dropdown" id="time2a">
+                        <option value = "12" > 12-1pm </option>
+                        <option value = "1" > 1-2pm </option>
+                        <option value = "2" > 2-3pm </option>
+                        <option value = "3" > 3-4pm </option>
+                        <option value = "4" > 4-5pm </option>
+                        <option value = "5" > 5-6pm </option>
+                        <option value = "6" > 6-7pm </option>
+                        <option value = "7" > 7-8pm </option>
+                </select> -->
+                <input type="text" id="time2a">
+            </td>
+            <td>
+                <select name="dropdown" id="day2b">
+                    <option value = "Mon" > Monday </option>
+                    <option value = "Tue" > Tuesday </option>
+                    <option value = "Wed" > Wednesday </option>
+                    <option value = "Thu" > Thursday </option>
+                    <option value = "Fri" > Friday </option>
+                </select>
+            </td>
+            <td>
+                <!-- <select name="dropdown" id="time2b">
+                        <option value = "12"> 12-1pm </option>
+                        <option value = "1" > 1-2pm </option>
+                        <option value = "2" > 2-3pm </option>
+                        <option value = "3" > 3-4pm </option>
+                        <option value = "4" > 4-5pm </option>
+                        <option value = "5" > 5-6pm </option>
+                        <option value = "6" > 6-7pm </option>
+                        <option value = "7" > 7-8pm </option>
+                </select> -->
+                <input type="text" id="time2b">
+            </td>
+        </tr>
+    </table>
+    <h2>Mina's Schedule</h2>
+    <button id="btn" onclick="getSchedule(); return false;">Click to See</button>
+    <table>
+        <thead id="myScheduleHead">
+        </thead>
+        <tbody id="myScheduleBody">
+        </tbody>
+    </table>
+
+    <script src="feature.js"></script>
+    </body>
+</html>
